@@ -24,7 +24,7 @@ describe('API /', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.should.to.be.html;
-                res.text.should.be.equal("Hello Docker World\n");
+                res.text.should.be.equal("Hello Docker World iam jnan\n");
                 done();
             });
     });
