@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: onlineapp-service
+  labels:
+    app: onlineapp-deployment
+spec:
+  selector:
+    app: onlineapp-deployment
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 31200
