@@ -1,0 +1,9 @@
+---
+- name: create service for deployment
+  hosts: ITLPVEB002
+  become: true
+  user: root
+
+  tasks:
+  - name: create a service
+    command: kubectl apply -f Onlineapp-Service.yml

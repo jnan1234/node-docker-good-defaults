@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: onlineapp
-        image: itdbuild/sam3
+        image: itdbuild/sam
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 3000
